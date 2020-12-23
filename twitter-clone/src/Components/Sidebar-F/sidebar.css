@@ -1,0 +1,22 @@
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    justify-self: left !important;
+}
+.sidebar_Options:hover {
+    background-color: #e8f5fe;
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+}
+    /* .sidebar_Options> .MuiSvgIcon-root{
+        padding: 20px;
+    } */
+
+
+ .sidebarOptions--active{
+    color: var(--twitter-color);
+}
