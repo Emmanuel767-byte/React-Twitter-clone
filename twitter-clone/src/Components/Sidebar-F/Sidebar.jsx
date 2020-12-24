@@ -15,14 +15,14 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
                 {/* Twitter icon */}
-                Welcome Back user
-                <TwitterIcon/>
+                <h1>Welcome Back user</h1>
+                <TwitterIcon className="sidebar_twitterIcon" />
                 <br/>
                 {/* Sidebar Options*/}
                 <SidebarOptions active text="Home" Icon={HomeIcon}/>
                 <SidebarOptions text="Explore" Icon={SearchIcon}/>
                 <SidebarOptions text="Notification" Icon={NotificationsNoneIcon}/>
-                <SidebarOptions text="My Messages" Icon={MailOutlineIcon}/>
+                <SidebarOptions text="Messages" Icon={MailOutlineIcon}/>
                 <SidebarOptions text="List" Icon={ViewListIcon}/>
                 <SidebarOptions text="Home" Icon={TurnedInNotIcon}/>
                 <SidebarOptions text="Profile" Icon={PermIdentityIcon}/>
@@ -31,7 +31,8 @@ const Sidebar = () => {
                 {/* Sidebar Options*/}
                 {/* Sidebar Options*/}
                 {/* Sidebar Options*/}
-                <Button variant="outlined">Tweet</Button>
+                <Button className="sidebar_tweet" fullWidth variant="outlined">Tweet</Button>
+            
             {/* Button */}
         </div>
     )
